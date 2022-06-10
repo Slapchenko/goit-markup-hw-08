@@ -1,0 +1,47 @@
+/* Clients section */
+.clients {
+  padding-top: 94px;
+  padding-bottom: 94px;
+
+  &__title {
+    margin-bottom: 50px;
+  }
+
+  &__list {
+    display: flex;
+  }
+
+  &__item {
+    display: flex;
+    margin-right: 30px;
+  }
+
+  &__item:last-child {
+    margin-right: 0;
+  }
+
+  &__link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 170px;
+    height: 92px;
+
+    border: solid 1px var(--main-icon-cl);
+    border-radius: 4px;
+
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    transition-duration: 250ms;
+
+    transition-property: border, fill;
+
+    fill: var(--main-icon-cl);
+  }
+
+  &__link:hover,
+  &__link:focus {
+    border: solid 1px var(--accent-cl);
+
+    fill: var(--accent-cl);
+  }
+}
