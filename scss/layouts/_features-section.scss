@@ -32,12 +32,12 @@
       }
     }
 
-    @media screen and (min-width: 1200px) {
+    @include mq(desktop) {
       width: calc((100% - 90px) / 4);
       margin-right: 30px;
 
       &:last-child {
-        @media screen and (min-width: 1200px) {
+        @include mq(desktop) {
           margin-right: 0px;
         }
       }
@@ -48,7 +48,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    /*   */
+
     height: 120px;
     margin-bottom: 30px;
 
@@ -65,7 +65,7 @@
     line-height: 16px;
     text-transform: uppercase;
 
-    @media screen and (max-width: 767px) {
+    @include mw(mobile-only) {
       text-align: center;
     }
   }
@@ -77,7 +77,7 @@
     line-height: 1.71;
   }
 
-  @media screen and (min-width: 1200px) {
+  @include mq(desktop) {
     width: 1200px;
     padding-top: 94px;
     padding-bottom: 94px;
