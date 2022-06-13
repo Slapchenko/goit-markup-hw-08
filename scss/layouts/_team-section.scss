@@ -6,12 +6,12 @@
   margin-left: auto;
   margin-right: auto;
 
+  background-color: var(--secondary-bg-cl);
+
   @include mq(desktop) {
     padding-top: 94px;
     padding-bottom: 94px;
   }
-
-  background-color: var(--secondary-bg-cl);
 
   &__title {
     margin-bottom: 30px;
