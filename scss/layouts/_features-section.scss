@@ -16,6 +16,9 @@
   &__item {
     @include mq(mobile-only) {
       margin-bottom: 30px;
+      &:last-child {
+        margin-bottom: 0px;
+      }
     }
 
     @include mq(tablet-only) {
@@ -65,7 +68,7 @@
     line-height: 16px;
     text-transform: uppercase;
 
-    @include mw(mobile-only) {
+    @include mq(mobile-only) {
       text-align: center;
     }
   }
