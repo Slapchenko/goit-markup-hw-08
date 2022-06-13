@@ -644,7 +644,7 @@ img {
 
 @media screen and (min-width: 768px) and (max-width: 1199.98px) {
   .features__item {
-    width: calc((100% - 30px) / 3);
+    width: calc((100% - 30px) / 2);
     margin-right: 30px;
     margin-bottom: 30px;
   }
