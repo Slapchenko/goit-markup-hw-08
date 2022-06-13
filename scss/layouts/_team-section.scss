@@ -74,6 +74,17 @@
     }
   }
 
+  &__img {
+    @include mq(tablet-only) {
+      width: 354px;
+      height: 374px;
+    }
+    @include mq(desktop) {
+      width: 270px;
+      height: 260px;
+    }
+  }
+
   &__group {
     display: flex;
     flex-direction: column;

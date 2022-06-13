@@ -859,6 +859,20 @@ img {
   }
 }
 
+@media screen and (min-width: 768px) and (max-width: 1199.98px) {
+  .team__img {
+    width: 354px;
+    height: 374px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .team__img {
+    width: 270px;
+    height: 260px;
+  }
+}
+
 .team__group {
   display: -webkit-box;
   display: -ms-flexbox;
