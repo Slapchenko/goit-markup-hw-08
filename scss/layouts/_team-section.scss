@@ -89,9 +89,12 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    /* width: 270px; */
     padding-top: 30px;
-    padding-bottom: 30px;
+    padding-bottom: 24px;
+
+    @include mq(desktop) {
+      padding-bottom: 30px;
+    }
   }
 
   &__subtitle {
