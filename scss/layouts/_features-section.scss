@@ -22,7 +22,7 @@
     }
 
     @include mq(tablet-only) {
-      width: calc((100% - 30px) / 2);
+      width: calc((100% - 30px) / 3);
       margin-right: 30px;
       margin-bottom: 30px;
 

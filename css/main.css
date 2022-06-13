@@ -644,7 +644,7 @@ img {
 
 @media screen and (min-width: 768px) and (max-width: 1199.98px) {
   .features__item {
-    width: calc((100% - 30px) / 2);
+    width: calc((100% - 30px) / 3);
     margin-right: 30px;
     margin-bottom: 30px;
   }
@@ -816,7 +816,6 @@ img {
     display: flex;
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
-    /* align-items: center; */
   }
 }
 
@@ -931,34 +930,82 @@ img {
 
 /* Clients section */
 .clients {
-  padding-top: 94px;
-  padding-bottom: 94px;
+  padding-top: 60px;
+  padding-bottom: 60px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+@media screen and (min-width: 1200px) {
+  .clients {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
 }
 
 .clients__title {
+  margin-bottom: 30px;
   color: var(--secondary-txt-cl);
   font-weight: 700;
-  font-size: 36px;
+  font-size: 28px;
   line-height: 1.17;
   text-align: center;
-  margin-bottom: 50px;
+}
+
+@media screen and (min-width: 1200px) {
+  .clients__title {
+    margin-bottom: 50px;
+    font-size: 36px;
+  }
 }
 
 .clients__list {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 
-.clients__item {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  margin-right: 30px;
+@media screen and (max-width: 767.98px) {
+  .clients__item {
+    width: calc((100% - 30px) / 2);
+    margin-right: 30px;
+    margin-bottom: 30px;
+  }
+  .clients__item:nth-child(2n) {
+    margin-right: 0;
+  }
+  .clients__item:nth-child(n + 5) {
+    margin-bottom: 0;
+  }
 }
 
-.clients__item:last-child {
-  margin-right: 0;
+@media screen and (min-width: 768px) and (max-width: 1199.98px) {
+  .clients__item {
+    width: calc((100% - 2 * 30px) / 3);
+    margin-right: 30px;
+    margin-bottom: 30px;
+  }
+  .clients__item:nth-child(3n) {
+    margin-right: 0;
+  }
+  .clients__item:nth-child(n + 4) {
+    margin-bottom: 0;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .clients__item {
+    width: calc((100% - 5 * 30px) / 6);
+    margin-right: 30px;
+  }
+}
+
+@media screen and (min-width: 1200px) and (min-width: 1200px) {
+  .clients__item:last-child {
+    margin-right: 0px;
+  }
 }
 
 .clients__link {
@@ -971,7 +1018,6 @@ img {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  width: 170px;
   height: 92px;
   border: solid 1px var(--main-icon-cl);
   border-radius: 4px;
