@@ -72,6 +72,7 @@
   &__link:hover &__description,
   &__link:focus &__description {
     transform: translateY(0);
+    opacity: 1;
   }
 
   &__img-box {
@@ -102,6 +103,7 @@
     height: 100%;
     padding-left: 24px;
     padding-right: 24px;
+    opacity: 0;
 
     color: var(--third-txt-cl);
 
@@ -110,7 +112,7 @@
     line-height: 1.56;
     background-color: var(--accent-cl);
 
-    transform: translateY(101%);
+    transform: translateY(100%);
 
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
     transition-duration: 250ms;
