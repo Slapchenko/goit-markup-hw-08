@@ -13,9 +13,10 @@
 .projects-list {
   display: flex;
   flex-wrap: wrap;
-  align-items: center;
 
   &__item {
+    max-width: 100%;
+
     @include mq(mobile-only) {
       margin-bottom: 30px;
       &:last-child {
@@ -55,16 +56,17 @@
   &__link {
     display: flex;
     flex-direction: column;
+    height: 100%;
 
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
     transition-duration: 250ms;
 
     transition-property: box-shadow;
-  }
 
-  &__link:hover,
-  &__link:focus {
-    box-shadow: 0px 4px 4px var(--main-shadow-cl);
+    &:hover,
+    &:focus {
+      box-shadow: 0px 4px 4px var(--main-shadow-cl);
+    }
   }
 
   &__link:hover &__description,
@@ -94,19 +96,21 @@
     top: 0;
     left: 0;
 
-    display: block;
+    display: flex;
+    align-items: center;
     width: 100%;
-    padding: 63px 24px;
+    height: 100%;
+    padding-left: 24px;
+    padding-right: 24px;
 
     color: var(--third-txt-cl);
 
     font-weight: 400;
     font-size: 18px;
     line-height: 1.56;
+    background-color: var(--accent-cl);
 
-    background-image: linear-gradient(to right, rgba(33, 150, 243, 0.9), rgba(33, 150, 243, 0.9));
-
-    transform: translateY(100%);
+    transform: translateY(101%);
 
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
     transition-duration: 250ms;

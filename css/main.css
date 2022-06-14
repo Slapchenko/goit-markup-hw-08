@@ -460,9 +460,7 @@ img {
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  /* align-items: center; */
   margin-bottom: 40px;
 }
 
@@ -490,11 +488,8 @@ img {
 }
 
 @media screen and (max-width: 767.98px) {
-  .btn-filter__item:nth-child(-n + 3) {
+  .btn-filter__item {
     margin-bottom: 15px;
-  }
-  .btn-filter__item:nth-child(3) {
-    margin-right: 0;
   }
 }
 
@@ -1259,9 +1254,10 @@ img {
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+}
+
+.projects-list__item {
+  max-width: 100%;
 }
 
 @media screen and (max-width: 767.98px) {
@@ -1311,6 +1307,7 @@ img {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  height: 100%;
   -webkit-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
           transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   -webkit-transition-duration: 250ms;
@@ -1355,17 +1352,23 @@ img {
   position: absolute;
   top: 0;
   left: 0;
-  display: block;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   width: 100%;
-  padding: 63px 24px;
+  height: 100%;
+  padding-left: 24px;
+  padding-right: 24px;
   color: var(--third-txt-cl);
   font-weight: 400;
   font-size: 18px;
   line-height: 1.56;
-  background-image: -webkit-gradient(linear, left top, right top, from(rgba(33, 150, 243, 0.9)), to(rgba(33, 150, 243, 0.9)));
-  background-image: linear-gradient(to right, rgba(33, 150, 243, 0.9), rgba(33, 150, 243, 0.9));
-  -webkit-transform: translateY(100%);
-          transform: translateY(100%);
+  background-color: var(--accent-cl);
+  -webkit-transform: translateY(101%);
+          transform: translateY(101%);
   -webkit-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
           transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   -webkit-transition-duration: 250ms;
