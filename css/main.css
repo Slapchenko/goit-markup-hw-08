@@ -278,11 +278,30 @@ img {
   position: absolute;
   top: 50%;
   left: 50%;
-  width: 528px;
+  max-width: 100%;
   padding: 40px;
   background-color: var(--main-bg-cl);
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
+  overflow-y: scroll;
+}
+
+@media screen and (max-width: 767.98px) {
+  .modal-wrapper {
+    width: 450px;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1199.98px) {
+  .modal-wrapper {
+    width: 450px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .modal-wrapper {
+    max-width: 528px;
+  }
 }
 
 .modal-btn {
@@ -459,6 +478,13 @@ img {
   font-size: 14px;
   line-height: 1.71px;
   letter-spacing: 0.03em;
+}
+
+@media screen and (max-width: 1199.98px) {
+  .modal-form__agreement-text {
+    font-size: 12px;
+    line-height: 1.17;
+  }
 }
 
 .modal-form__agreement-link {
