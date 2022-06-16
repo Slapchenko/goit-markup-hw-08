@@ -1549,7 +1549,7 @@ img {
 }
 
 .subscribe-form__label {
-  width: 100%;
+  max-width: 100%;
 }
 
 .subscribe-form__input {
