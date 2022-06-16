@@ -25,16 +25,13 @@
   </head>
   <body>
     <!-- !Header -->
-    <!-- <header class="header">
-      <div class="container header__container"> -->
-    <!-- !Logo company-->
-    <!-- <a class="logo link header__logo" href="./index.html" aria-label="Логотип сайта" lang="en"
+    <header class="header">
+      <div class="container header__container">
+        <a class="logo link header__logo" href="./index.html" aria-label="Логотип сайта" lang="en"
           >Web<span class="logo__text logo__text--mode-dark">Studio</span></a
-        > -->
-    <!-- !Main navigation -->
-    <!--  <nav class="nav"> -->
-    <!-- !Link navigation -->
-    <!-- <ul class="nav__list list">
+        >
+        <nav class="nav">
+          <ul class="nav__list list">
             <li class="nav__item">
               <a class="nav__link link nav__link--current" href="./index.html">Студия</a>
             </li>
@@ -45,9 +42,8 @@
               <a class="nav__link link" href="#">Контакты</a>
             </li>
           </ul>
-        </nav> -->
-    <!-- !Contacts info in header-->
-    <!-- <div class="header__contacts">
+        </nav>
+        <div class="header__contacts">
           <ul class="header__contacts-list list">
             <li class="header__contacts-item">
               <a class="header__contacts-link link" href="mailto:info@devstudio.com">
@@ -67,12 +63,72 @@
             </li>
           </ul>
         </div>
-      </div>
-    </header> -->
 
-    <!-- !Unique page content -->
+        <button
+          class="menu-toggle js-open-menu"
+          type="button"
+          aria-expanded="false"
+          aria-controls="mobile-menu"
+        >
+          <svg class="menu-toggle__icon" width="40" height="40">
+            <use href="./images/icons.svg#icon-mobile-menu"></use>
+          </svg>
+        </button>
+      </div>
+      <div class="menu-container js-menu-container" id="mobile-menu">
+        <button class="menu-toggle js-close-menu" type="button">
+          <svg class="menu-toggle__icon" width="40" height="40">
+            <use href="./images/icons.svg#icon-mobile-menu-close"></use>
+          </svg>
+        </button>
+
+        <ul class="mobile-menu list">
+          <li class="mobile-menu__item">
+            <a class="mobile-menu__link link mobile-menu__link--current" href="./index.html"
+              >Студия</a
+            >
+          </li>
+          <li class="mobile-menu__item">
+            <a class="mobile-menu__link link" href="./portfolio.html">Портфолио</a>
+          </li>
+          <li class="mobile-menu__item">
+            <a class="mobile-menu__link link" href="#">Контакты</a>
+          </li>
+        </ul>
+
+        <ul class="mobile-contacts list">
+          <li class="mobile-contacts__item">
+            <a class="mobile-contacts__link link" href="tel:+380961111111">+38 096 111 11 11</a>
+          </li>
+          <li class="mobile-contacts__item">
+            <a
+              class="mobile-contacts__link link mobile-contacts__link--grey"
+              href="mailto:info@devstudio.com"
+              >info@devstudio.com</a
+            >
+          </li>
+        </ul>
+
+        <ul class="mobile-social list">
+          <li class="mobile-social__item">
+            <a class="mobile-social__link link" href="#">Instagram</a>
+          </li>
+          <li class="mobile-social__item">
+            <a class="mobile-social__link link" href="#">Twitter</a>
+          </li>
+          <li class="mobile-social__item">
+            <a class="mobile-social__link link" href="#">Facebook</a>
+          </li>
+          <li class="mobile-social__item">
+            <a class="mobile-social__link link" href="#">LinkedIn</a>
+          </li>
+        </ul>
+      </div>
+    </header>
+
+    <!-- ?Unique page content -->
     <main>
-      <!-- !Hero section -->
+      <!-- ?Hero section -->
       <section class="hero">
         <div class="container">
           <h1 class="hero__title">Эффективные решения для вашего бизнеса</h1>
@@ -83,7 +139,7 @@
           <div class="modal-wrapper">
             <button class="modal-btn" type="button" data-modal-close>
               <svg class="modal-btn__icon" width="17" height="17">
-                <use href="./images/icons.svg#icon-close"></use>
+                <use href="./images/icons.svg#icon-modal-close"></use>
               </svg>
             </button>
             <b class="modal-title">Оставьте свои данные, мы вам перезвоним</b>
@@ -199,7 +255,7 @@
         </div>
       </section>
 
-      <!-- !Services section -->
+      <!-- ?Services section -->
       <section class="services">
         <div class="container">
           <h2 class="services__title">Чем мы занимаемся</h2>
@@ -641,7 +697,7 @@
         </div>
       </section>
 
-      <!-- !Clients section -->
+      <!-- ?Clients section -->
       <section class="clients">
         <div class="container">
           <h2 class="clients__title">Постоянные клиенты</h2>
@@ -695,7 +751,7 @@
       </section>
     </main>
 
-    <!-- !Footer -->
+    <!-- ?Footer -->
     <footer class="footer">
       <div class="container footer__container">
         <div class="logo-box">
@@ -763,6 +819,13 @@
         </div>
       </div>
     </footer>
+    <script
+      defer
+      src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+      integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
+      crossorigin="anonymous"
+    ></script>
+    <script defer src="js/mobile-menu.js"></script>
     <script src="./js/modal.js"></script>
   </body>
 </html>
