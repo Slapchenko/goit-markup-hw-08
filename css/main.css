@@ -278,12 +278,11 @@ img {
   position: absolute;
   top: 50%;
   left: 50%;
-  max-width: calc(100% - 30px);
+  max-width: 100%;
   padding: 40px;
   background-color: var(--main-bg-cl);
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
-  overflow-y: scroll;
 }
 
 @media screen and (max-width: 767.98px) {
