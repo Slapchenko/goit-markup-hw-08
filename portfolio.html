@@ -24,17 +24,14 @@
     <link rel="stylesheet" href="./css/main.min.css" />
   </head>
   <body>
-    <!-- ?Header -->
-    <!-- <header class="header">
-      <div class="container header__container"> -->
-    <!-- ?Logo company-->
-    <!-- <a class="logo link header__logo" href="./index.html" aria-label="Логотип сайта" lang="en"
+    <!-- Header -->
+    <header class="header">
+      <div class="container header__container">
+        <a class="logo link header__logo" href="./index.html" aria-label="Логотип сайта" lang="en"
           >Web<span class="logo__text logo__text--mode-dark">Studio</span></a
-        > -->
-    <!-- ?Main navigation -->
-    <!-- <nav class="nav"> -->
-    <!-- ?Link navigation -->
-    <!-- <ul class="nav__list list">
+        >
+        <nav class="nav">
+          <ul class="nav__list list">
             <li class="nav__item">
               <a class="nav__link link" href="./index.html">Студия</a>
             </li>
@@ -45,9 +42,8 @@
               <a class="nav__link link" href="#">Контакты</a>
             </li>
           </ul>
-        </nav> -->
-    <!-- ?Contacts info in header-->
-    <!-- <div class="header__contacts">
+        </nav>
+        <div class="header__contacts">
           <ul class="header__contacts-list list">
             <li class="header__contacts-item">
               <a class="header__contacts-link link" href="mailto:info@devstudio.com">
@@ -67,8 +63,68 @@
             </li>
           </ul>
         </div>
+
+        <button
+          class="menu-toggle js-open-menu"
+          type="button"
+          aria-expanded="false"
+          aria-controls="mobile-menu"
+        >
+          <svg class="menu-toggle__icon" width="40" height="40">
+            <use href="./images/icons.svg#icon-mobile-menu"></use>
+          </svg>
+        </button>
       </div>
-    </header> -->
+      <div class="menu-container js-menu-container" id="mobile-menu">
+        <button class="menu-toggle js-close-menu" type="button">
+          <svg class="menu-toggle__icon" width="40" height="40">
+            <use href="./images/icons.svg#icon-mobile-menu-close"></use>
+          </svg>
+        </button>
+
+        <ul class="mobile-menu list">
+          <li class="mobile-menu__item">
+            <a class="mobile-menu__link link" href="./index.html">Студия</a>
+          </li>
+          <li class="mobile-menu__item">
+            <a class="mobile-menu__link link mobile-menu__link--current" href="./portfolio.html"
+              >Портфолио</a
+            >
+          </li>
+          <li class="mobile-menu__item">
+            <a class="mobile-menu__link link" href="#">Контакты</a>
+          </li>
+        </ul>
+
+        <ul class="mobile-contacts list">
+          <li class="mobile-contacts__item">
+            <a class="mobile-contacts__link link" href="tel:+380961111111">+38 096 111 11 11</a>
+          </li>
+          <li class="mobile-contacts__item">
+            <a
+              class="mobile-contacts__link link mobile-contacts__link--grey"
+              href="mailto:info@devstudio.com"
+              >info@devstudio.com</a
+            >
+          </li>
+        </ul>
+
+        <ul class="mobile-social list">
+          <li class="mobile-social__item">
+            <a class="mobile-social__link link" href="#">Instagram</a>
+          </li>
+          <li class="mobile-social__item">
+            <a class="mobile-social__link link" href="#">Twitter</a>
+          </li>
+          <li class="mobile-social__item">
+            <a class="mobile-social__link link" href="#">Facebook</a>
+          </li>
+          <li class="mobile-social__item">
+            <a class="mobile-social__link link" href="#">LinkedIn</a>
+          </li>
+        </ul>
+      </div>
+    </header>
 
     <!-- ?Unique page content -->
     <main>
@@ -796,8 +852,8 @@
         </div>
       </section>
     </main>
-    <!-- ?Footer -->
-    <!--  <footer class="footer">
+    <!-- Footer -->
+    <footer class="footer">
       <div class="container footer__container">
         <div class="logo-box">
           <a class="logo link footer__logo" href="./index.html" aria-label="Логотип сайта" lang="en"
@@ -863,6 +919,13 @@
           </form>
         </div>
       </div>
-    </footer> -->
+    </footer>
+    <script
+      defer
+      src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+      integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
+      crossorigin="anonymous"
+    ></script>
+    <script defer src="js/mobile-menu.js"></script>
   </body>
 </html>
