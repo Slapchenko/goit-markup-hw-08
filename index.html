@@ -134,7 +134,7 @@
           <h1 class="hero__title">Эффективные решения для вашего бизнеса</h1>
           <button class="btn" type="button" data-modal-open>Заказать услугу</button>
         </div>
-        <!-- !Modal -->
+        <!-- Modal -->
         <div class="backdrop is-hidden" data-modal>
           <div class="modal-wrapper">
             <button class="modal-btn" type="button" data-modal-close>
@@ -262,33 +262,93 @@
           <div class="services__container">
             <ul class="services__list list">
               <li class="services__item">
-                <img
-                  class="services__img"
-                  src="./images/about-us-section/box-1.jpg"
-                  alt="Разработка сайта"
-                  width="370"
-                  height="294"
-                />
+                <picture>
+                  <!-- for desktop -->
+                  <source
+                    media="(min-width: 1200px)"
+                    srcset="
+                      ./images/about-us-section/box-1_lg.webp    1x,
+                      ./images/about-us-section/box-1_lg@2x.webp 2x
+                    "
+                    type="image/webp"
+                  />
+                  <source
+                    media="(min-width: 1200px)"
+                    srcset="
+                      ./images/about-us-section/box-1_lg.jpg    1x,
+                      ./images/about-us-section/box-1_lg@2x.jpg 2x
+                    "
+                    type="image/jpg"
+                  />
+                  <img
+                    class="services__img"
+                    src="./images/about-us-section/box-1_lg.jpg"
+                    alt="Разработка сайта"
+                    width="370"
+                    height="294"
+                    loading="lazy"
+                  />
+                </picture>
                 <p class="services__label">Десктопные приложения</p>
               </li>
               <li class="services__item">
-                <img
-                  class="services__img"
-                  src="./images/about-us-section/box-2.jpg"
-                  alt="Разработка мобильных приложений"
-                  width="370"
-                  height="294"
-                />
+                <picture>
+                  <!-- for desktop -->
+                  <source
+                    media="(min-width: 1200px)"
+                    srcset="
+                      ./images/about-us-section/box-2_lg.webp    1x,
+                      ./images/about-us-section/box-2_lg@2x.webp 2x
+                    "
+                    type="image/webp"
+                  />
+                  <source
+                    media="(min-width: 1200px)"
+                    srcset="
+                      ./images/about-us-section/box-2_lg.jpg    1x,
+                      ./images/about-us-section/box-2_lg@2x.jpg 2x
+                    "
+                    type="image/jpg"
+                  />
+                  <img
+                    class="services__img"
+                    src="./images/about-us-section/box-2_lg.jpg"
+                    alt="Разработка мобильных приложений"
+                    width="370"
+                    height="294"
+                    loading="lazy"
+                  />
+                </picture>
                 <p class="services__label">Мобильные приложения</p>
               </li>
               <li class="services__item">
-                <img
-                  class="services__img"
-                  src="./images/about-us-section/box-3.jpg"
-                  alt="Графический дизайн"
-                  width="370"
-                  height="294"
-                />
+                <picture>
+                  <!-- for desktop -->
+                  <source
+                    media="(min-width: 1200px)"
+                    srcset="
+                      ./images/about-us-section/box-3_lg.webp    1x,
+                      ./images/about-us-section/box-3_lg@2x.webp 2x
+                    "
+                    type="image/webp"
+                  />
+                  <source
+                    media="(min-width: 1200px)"
+                    srcset="
+                      ./images/about-us-section/box-3_lg.jpg    1x,
+                      ./images/about-us-section/box-3_lg@2x.jpg 2x
+                    "
+                    type="image/jpg"
+                  />
+                  <img
+                    class="services__img"
+                    src="./images/about-us-section/box-3_lg.jpg"
+                    alt="Графический дизайн"
+                    width="370"
+                    height="294"
+                    loading="lazy"
+                  />
+                </picture>
                 <p class="services__label">Дизайнерские решения</p>
               </li>
             </ul>
@@ -303,7 +363,7 @@
           <ul class="team__list list">
             <li class="team__item">
               <picture>
-                <!-- ?for desktop -->
+                <!-- for desktop -->
                 <source
                   media="(min-width: 1200px)"
                   srcset="
@@ -320,7 +380,7 @@
                   "
                   type="image/jpg"
                 />
-                <!-- ?for tablet -->
+                <!-- for tablet -->
                 <source
                   media="(min-width: 768px)"
                   srcset="
@@ -337,7 +397,7 @@
                   "
                   type="image/jpg"
                 />
-                <!-- ?for mobile -->
+                <!-- for mobile -->
                 <source
                   media="(max-width: 767px)"
                   srcset="
@@ -354,7 +414,7 @@
                   "
                   type="image/jpg"
                 />
-                <!-- ?default device type -->
+                <!-- default device type -->
                 <img
                   class="team__img"
                   src="./images/our-team-section/person-1_sm.jpg"
@@ -401,7 +461,7 @@
             </li>
             <li class="team__item">
               <picture>
-                <!-- ?for desktop -->
+                <!-- for desktop -->
                 <source
                   media="(min-width: 1200px)"
                   srcset="
@@ -418,7 +478,7 @@
                   "
                   type="image/jpg"
                 />
-                <!-- ?for tablet -->
+                <!-- for tablet -->
                 <source
                   media="(min-width: 768px)"
                   srcset="
@@ -435,7 +495,7 @@
                   "
                   type="image/jpg"
                 />
-                <!-- ?for mobile -->
+                <!-- for mobile -->
                 <source
                   media="(max-width: 767px)"
                   srcset="
@@ -452,7 +512,7 @@
                   "
                   type="image/jpg"
                 />
-                <!-- ?default device type -->
+                <!-- default device type -->
                 <img
                   class="team__img"
                   src="./images/our-team-section/person-2_sm.jpg"
@@ -499,7 +559,7 @@
             </li>
             <li class="team__item">
               <picture>
-                <!-- ?for desktop -->
+                <!-- for desktop -->
                 <source
                   media="(min-width: 1200px)"
                   srcset="
@@ -516,7 +576,7 @@
                   "
                   type="image/jpg"
                 />
-                <!-- ?for tablet -->
+                <!-- for tablet -->
                 <source
                   media="(min-width: 768px)"
                   srcset="
@@ -533,7 +593,7 @@
                   "
                   type="image/jpg"
                 />
-                <!-- ?for mobile -->
+                <!-- for mobile -->
                 <source
                   media="(max-width: 767px)"
                   srcset="
@@ -550,7 +610,7 @@
                   "
                   type="image/jpg"
                 />
-                <!-- ?default device type -->
+                <!-- default device type -->
                 <img
                   class="team__img"
                   src="./images/our-team-section/person-3_sm.jpg"
@@ -597,7 +657,7 @@
             </li>
             <li class="team__item">
               <picture>
-                <!-- ?for desktop -->
+                <!-- for desktop -->
                 <source
                   media="(min-width: 1200px)"
                   srcset="
@@ -614,7 +674,7 @@
                   "
                   type="image/jpg"
                 />
-                <!-- ?for tablet -->
+                <!-- for tablet -->
                 <source
                   media="(min-width: 768px)"
                   srcset="
@@ -631,7 +691,7 @@
                   "
                   type="image/jpg"
                 />
-                <!-- ?for mobile -->
+                <!-- for mobile -->
                 <source
                   media="(max-width: 767px)"
                   srcset="
@@ -648,7 +708,7 @@
                   "
                   type="image/jpg"
                 />
-                <!-- ?default device type -->
+                <!-- default device type -->
                 <img
                   class="team__img"
                   src="./images/our-team-section/person-4_sm.jpg"
